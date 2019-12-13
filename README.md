@@ -14,10 +14,8 @@
 
 
 
-
-
 # 使用方法
 
-
-
 docker run -d --name subconverter -p 25500:25500 breakersun/subconverter:latest
+
+docker run -d --name subconverter -p 25500:25500 breakersun/subconverter:arm64v8
