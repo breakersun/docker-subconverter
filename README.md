@@ -20,8 +20,4 @@
 
 
 
-目前作者只提供了x86的可执行文件，所以只能支持x86
-
-
-
 docker run -d --name subconverter -p 25500:25500 breakersun/subconverter:latest

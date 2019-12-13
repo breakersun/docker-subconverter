@@ -4,7 +4,7 @@ MAINTAINER leosun <leosunsl@outlook.com>
 #RUN apk add wget
 
 WORKDIR /
-ENV SUB_VER 0.0.7
+ENV SUB_VER 0.1.0
 
 RUN set -x && \
     wget --no-check-certificate https://github.com/tindy2013/subconverter/releases/download/v${SUB_VER}/subconverter_linux64.tar.gz && \

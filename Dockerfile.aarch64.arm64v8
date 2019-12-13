@@ -1,0 +1,17 @@
+FROM arm64v8/alpine:3.10
+MAINTAINER leosun <leosunsl@outlook.com>
+COPY qemu-aarch64-static /usr/bin/
+
+RUN apk add wget
+
+WORKDIR /
+ENV SUB_VER 0.1.0
+
+RUN set -x && \
+	wget --no-check-certificate https://github.com/breakersun/subconverter/releases/download/${SUB_VER}/subconverter_linux_arm64v8.tar.gz && \
+    tar xzf subconverter_linux_arm64v8.tar.gz && \
+    rm subconverter_linux_arm64v8.tar.gz
+
+CMD ./subconverter
+
+EXPOSE 25500
