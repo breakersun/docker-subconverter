@@ -8,7 +8,7 @@ WORKDIR /
 ENV SUB_VER 0.1.0
 
 RUN set -x && \
-	wget --no-check-certificate https://github.com/breakersun/subconverter/releases/download/${SUB_VER}/subconverter_linux_arm64v8.tar.gz && \
+	wget --no-check-certificate https://github.com/breakersun/subconverter/releases/download/v${SUB_VER}/subconverter_linux_arm64v8.tar.gz && \
     tar xzf subconverter_linux_arm64v8.tar.gz && \
     rm subconverter_linux_arm64v8.tar.gz
 
